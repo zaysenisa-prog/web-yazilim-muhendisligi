@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 9 - Video ve Ses Oynatıcıları </title>
+</head>
+
+<body>
+
+    <h1>Video ve Ses Oynatıcıları</h1>
+
+
+    <h2>Podcast Oynatıcı</h2>
+
+    <audio src="./audios/muzik.mp3" controls autoplay muted loop>
+        Tarayıcınız ses oynatıcıyı desteklemiyor.
+    </audio>
+    <!-- Ses dosyası açılmazsa bu yazı görünür.-->
+    <!-- autoplay muted birlikte kullanılmalıdır: Sessiz şekilde oynar.-->
+    <!-- Loop ise döngü: Sürekli oynar -->
+
+
+
+    <h2>Tanıtım Videosu</h2>
+
+    <video src="./audios/ornek.mp4" controls width="500" autoplay muted loop>
+        Tarayıcınız video oynatıcıyı desteklemiyor.
+    </video>
+
+
+    <!-- burada video posteri koyduk auto play muted koymayınca direkt posteri görebiliriz -->
+    <video src="./audios/ornek.mp4" controls width="500" loop poster="./images/wym-modul1-kapak.webp">
+        Tarayıcınız video oynatıcıyı desteklemiyor.
+    </video>
+
+
+
+
+
+    <!-- Diğer yol  -->
+    <!-- Burada birden farklı formatta video ekleyerek alternatif oluşturuluyor açılmazsa da yazı görünüyor -->
+    <!-- ./ornek.webm videosu yok alternatifi örneklemek için yazdık -->
+    <video controls width="500" autoplay muted loop>
+        <source src="./audios/ornek.mp4">
+        <source src="./audios/ornek.webm">
+        Tarayıcınız video oynatıcıyı desteklemiyor.
+    </video>
+
+
+
+
+</body>
+
+</html>
